@@ -9,11 +9,21 @@ setup = function() {
 
 //🟢draw Function - will run on repeat
 draw = function(){
+  fill(0,200,0);
+  textSize(15);
+
+  if(mouseClicked){
+    text("SHarkk!!!", random(0,600), random(0,600));
+    text("🐟🐠🦐", random(0,600), random(0,600));
+  }
+  
 
 };
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
+  drawFish("🦈🦈", random(0,600), random(0,600));
+  
 
 }
 
@@ -21,7 +31,7 @@ mouseClicked = function(){
 var drawFish = function(fishX, fishY, fishColor){
   textSize(80);
   fill(fishColor);
-  text("𓆝", fishX, fishY);
+  text("🦈🦈", fishX, fishY);
 };
 
 
